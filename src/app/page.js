@@ -1,3 +1,4 @@
+import NewArrival from "./components/NewArrival";
 import Swiper from "./components/Swiper";
 
 export default function Home() {
@@ -5,6 +6,7 @@ export default function Home() {
     <main>
       <div>
         <Swiper/>
+        <NewArrival/>
       </div>
     </main>
   );
