@@ -1,3 +1,4 @@
+import Blog from "./components/Blog";
 import NewArrival from "./components/NewArrival";
 import Swiper from "./components/Swiper";
 
@@ -7,6 +8,7 @@ export default function Home() {
       <div>
         <Swiper/>
         <NewArrival/>
+        <Blog/>
       </div>
     </main>
   );
