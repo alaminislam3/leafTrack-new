@@ -44,10 +44,10 @@ const Swiper = () => {
   };
 
   return (
-    <div className="w-full px-4 md:px-6 lg:px-8 py-8 md:py-4 mt-5 bg-white">
-      <div className="max-w-7xl mx-auto">
+    <div className="w-full bg-white ">
+      <div className="max-w-7xl mx-auto ">
         {/* Swiper Container */}
-        <div className="relative w-full overflow-hidden rounded-2xl shadow-lg">
+        <div className="relative w-full  overflow-hidden  shadow-lg">
           {/* Slides Container */}
           <div className="relative w-full">
             {slides.map((slide, index) => (
@@ -58,7 +58,7 @@ const Swiper = () => {
                 }`}
               >
                 {/* Responsive Image Heights */}
-                <div className="relative w-full h-48 sm:h-64 md:h-80 lg:h-96 xl:h-[450px]">
+                <div className="relative w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] xl:h-[600px]">
                   <Image
                     src={slide.image}
                     alt={`Slide ${index + 1}`}
