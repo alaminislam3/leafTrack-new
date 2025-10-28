@@ -5,7 +5,7 @@ import dbConnect, { collectionNameObj } from "../lib/dbConnect";
 export default async function NewArrival() {
   const plantCollection = dbConnect(collectionNameObj.plantcollection);
   const plants = await plantCollection.find({}).toArray();
-    console.log(plants);
+    // console.log(plants);
   return (
     <div className="max-w-7xl mx-auto px-4 py-10">
       <h2 className="text-3xl font-bold text-green-600 text-center mb-8">

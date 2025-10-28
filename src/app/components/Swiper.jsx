@@ -44,8 +44,8 @@ const Swiper = () => {
   };
 
   return (
-    <div className="w-full bg-white ">
-      <div className="max-w-7xl mx-auto ">
+    <div className="w-full bg-white">
+      <div className=" mx-auto ">
         {/* Swiper Container */}
         <div className="relative w-full  overflow-hidden  shadow-lg">
           {/* Slides Container */}

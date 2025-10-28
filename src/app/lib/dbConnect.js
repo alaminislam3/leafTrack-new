@@ -13,6 +13,6 @@ export default function dbConnect(collectionName) {
       strict: true,
       deprecationErrors: true,
     },
-  });
+  })
   return client.db(process.env.DB_NAME).collection(collectionName);
 }
