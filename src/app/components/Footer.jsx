@@ -114,7 +114,7 @@ export const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div>
+            <div className="hidden md:block">
               <p className="font-semibold tracking-wide text-teal-accent-400">
                 Apples
               </p>
@@ -161,7 +161,7 @@ export const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div>
+            <div className="hidden md:block">
               <p className="font-semibold tracking-wide text-teal-accent-400">
                 Business
               </p>
