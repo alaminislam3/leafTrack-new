@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export default async function SinglePlantpage({ params }) {
-  const { id } = params;
+  const { id } =await params;
   const plantCollection = dbConnect(collectionNameObj.plantcollection);
   const plant = await plantCollection.findOne({ _id: new ObjectId(id) });
 //  console.log(plant);
@@ -40,6 +40,8 @@ export default async function SinglePlantpage({ params }) {
               src={plant.image}
               alt={plant.plantName}
               className="w-full h-96 object-cover"
+              height={384}
+              width={300}
             />
           </div>
 
@@ -111,7 +113,7 @@ export default async function SinglePlantpage({ params }) {
               </div>
             </div>
 
-            <div className="mt-8 flex space-x-4">
+            {/* <div className="mt-8 flex space-x-4">
               <Link
                 href={`/plants/edit/${plant._id.toString()}`}
                 className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
@@ -121,7 +123,7 @@ export default async function SinglePlantpage({ params }) {
               <button className="px-6 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition">
                 Delete Plant
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
